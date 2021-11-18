@@ -1,5 +1,5 @@
 class Movie < ApplicationRecord
-  has_many :bookmark
+  has_many :bookmarks
 
-  validates :title, presence: true, :title, uniqueness: true
+  validates :title, uniqueness: true, presence: true
 end
