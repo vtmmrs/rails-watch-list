@@ -1,0 +1,7 @@
+<h2>Add a new list name</h2>
+
+<%= simple_form_for @list do |f| %>
+  <%# <%= f.association :movie, prompt: "Select a movie", input_html: { class: "select2" } %> %>
+  <%= f.input :name, placeholder: 'enter a name' %>
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
